@@ -8,14 +8,14 @@ It displays the following information about the corresponding gist:
 
 • description of the gist if any, OR the message “No Description” otherwise
 
-• last updated date in the format DD/MM/YYYY
+• last updated date 
 
 • link to the gist which opens in a new tab on clicking
 
 It also performs the following functionalities:
 
 • Client-side filtering the fetched gists by description plus owner login
-(there is a search option in the top right side,type any description or owner login and it will be searched accordingly)
+(there is a search option below owner login and description,type any description or owner login and it will be searched accordingly)
 
 • Client-side sorting of the fetched gists by last updated date
 (hover the mouse cursor above the Last updated date and click it,the details will be sorted according to Last updated date)
