@@ -11,7 +11,6 @@
 
     <title>Github Public Gists</title>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-
     <script src="appg.js"></script>
   </head>
 
@@ -50,12 +49,11 @@
                         <tbody id="found1">
                            <tr dir-paginate="details in list|filter:search|itemsPerPage:10">
                                 <th width="25%">
-                                 <span ng-if="!details.owner.login">N.A</span>
+                                <span ng-if="!details.owner.login">N.A</span>
                                 <span ng-if="details.owner.login">{{details.owner.login}}</span>
                                 </th>
                                 <th width="25%">
                                 <span ng-if="!details.description">No Description</span>
-
                                 <span ng-if="details.description">{{details.description}}</span>
                                  </th>
                                 <th width="20%">
@@ -63,7 +61,7 @@
                                  </th>
                                 <th width="20%">
                                 <a ng-href="{{details.url}}" target="_blank">Link</a>
-                                 </th>
+                                </th>
                             </tr>
                         </tbody>
                     </table>
@@ -71,12 +69,12 @@
                     max-size="10"
                     direction-links="true"
                     boundary-links="true" >
-                </dir-pagination-controls>
+                    </dir-pagination-controls>
                 </div>
             </div>
-            <div class="row"></div>
+           <div class="row"></div>
         </div>
     </div>
-    <script src="dirPagination.js"></script>
+  <script src="dirPagination.js"></script>
 </body>
 </html>
