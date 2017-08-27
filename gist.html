@@ -57,7 +57,7 @@
                                 <span ng-if="details.description">{{details.description}}</span>
                                  </th>
                                 <th width="20%">
-                                 {{details.updated_at.substring(0, 10)}}
+                                 {{details.updated_at.substring(8, 10)}}/{{details.updated_at.substring(5, 7)}}/{{details.updated_at.substring(0, 4)}}
                                  </th>
                                 <th width="20%">
                                 <a ng-href="{{details.url}}" target="_blank">Link</a>
