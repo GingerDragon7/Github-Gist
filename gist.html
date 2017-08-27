@@ -39,7 +39,7 @@
                                 Description <br>
                                 <input type="text" ng-model="search.description">
                                 </th>
-                                <th style="cursor: pointer;" ng-model="latest.updated_at" width="20%">
+                                <th style="cursor: pointer;" ng-click="orderByMe('details.updated_at')" ng-model="latest.updated_at" width="20%">
                                 Last updated date
                                 <br><br>
                                 </th>
@@ -47,7 +47,7 @@
                             </tr>
                         </thead>
                         <tbody id="found1">
-                           <tr dir-paginate="details in list|filter:search|itemsPerPage:10">
+                           <tr dir-paginate="details in list|filter:search|orderBy:myOrderBy|itemsPerPage:10">
                                 <th width="25%">
                                 <span ng-if="!details.owner.login">N.A</span>
                                 <span ng-if="details.owner.login">{{details.owner.login}}</span>
