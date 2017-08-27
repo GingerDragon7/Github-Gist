@@ -3,4 +3,7 @@
         $http.get('https://api.github.com/gists/public?per_page=100').success(function(data) {
           $scope.list = data;
         });
+        $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+        }
       });
